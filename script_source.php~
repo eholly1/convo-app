@@ -1,0 +1,12 @@
+<?php
+
+$scriptSources = array();
+array_push($scriptSources, "//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js");
+array_push($scriptSources, "//cdnjs.cloudflare.com/ajax/libs/knockout/3.0.0/knockout-min.js");
+
+echo "Array size: " + count($scriptSources);
+foreach ($scriptSources as $source) {
+  echo '<script type="text/javascript" src="' + $source + '" />';
+}
+
+?>
